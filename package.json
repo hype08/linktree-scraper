@@ -18,7 +18,6 @@
     "typescript": "^4.8.3"
   },
   "dependencies": {
-    "domhandler": "^5.0.3",
     "got": "^12.4.1",
     "jsdom": "^20.0.0"
   },

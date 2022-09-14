@@ -1,3 +1,4 @@
+import fs from 'fs';
 import got from 'got';
 import { JSDOM } from 'jsdom';
 
@@ -12,6 +13,10 @@ export default async function scraper(profile: string): Promise<any> {
 
   const accountData = linkTreeData['props']['pageProps']['account']
 
+  fs.writeFile('sample_data.json', JSON.stringify(accountData), (err) => {
+    console.log(err);
+  })
+
 }
 
-scraper('aaalpacaa_')
+scraper('selenagomez')
